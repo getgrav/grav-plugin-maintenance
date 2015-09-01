@@ -1,0 +1,14 @@
+en:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Site Offline\n## Please check back soon..."
+    AUTHORIZED_ACCESS: "**Authorized Access Required**"
+    BLUEPRINTS:
+      STATUS: Plugin status
+      MODE: Maintenance mode
+      MODE_HELP: Toggle the maintenance mode on or off, will be site-wide
+      ALLOW_LOGIN: Allow login
+      ALLOW_LOGIN_HELP: If you want to provide a login form for authorized users to access the site
+      ACCESS: Login access
+      ACCESS_HELP: The ACL authorization string that must be true for a user to access teh site
+      PAGE_ROUTE: Maintenance page route
+      PAGE_ROUTE_HELP: The route path to the custom Grav page you wish to use for maintenance
