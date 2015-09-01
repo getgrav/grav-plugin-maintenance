@@ -11,6 +11,9 @@ keywords: maintenance, plugin, required
 bugs: https://github.com/getgrav/grav-plugin-maintenance/issues
 license: MIT
 
+dependencies:
+  - login
+
 form:
   validation: strict
   fields:
