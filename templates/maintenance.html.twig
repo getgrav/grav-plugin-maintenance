@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+    {{ 'PLUGIN_MAINTENANCE.OFFLINE_MARKDOWN'|t|markdown }}
+
+    {% if maintenance.allow_login and not grav.user.authenticated %}
+        <div id="maintenance-login" style="text-align: center;">
+            {% include 'partials/login-form.html.twig' with {content: 'PLUGIN_MAINTENANCE.AUTHORIZED_ACCESS'|t|markdown }%}
+        </div>
+    {% endif %}
+{% endblock %}
