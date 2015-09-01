@@ -1,5 +1,5 @@
 name: Maintenance
-version: 1.0.0
+version: 1.0.1
 description: Puts your grav site into a maintenance mode
 icon: exclamation-triangle
 author:
@@ -10,6 +10,9 @@ homepage: https://github.com/getgrav/grav-plugin-maintenance
 keywords: maintenance, plugin, required
 bugs: https://github.com/getgrav/grav-plugin-maintenance/issues
 license: MIT
+
+dependencies:
+  - login
 
 form:
   validation: strict
