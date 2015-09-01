@@ -1,5 +1,5 @@
 # v1.0.0
-## XX/XX/XXXX
+## 09/01/2015
 
 1. [](#new)
     * ChangeLog started...
