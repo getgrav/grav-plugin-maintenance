@@ -9,6 +9,21 @@ en:
       ALLOW_LOGIN: Allow login
       ALLOW_LOGIN_HELP: If you want to provide a login form for authorized users to access the site
       ACCESS: Login access
-      ACCESS_HELP: The ACL authorization string that must be true for a user to access teh site
+      ACCESS_HELP: The ACL authorization string that must be true for a user to access the site
       PAGE_ROUTE: Maintenance page route
       PAGE_ROUTE_HELP: The route path to the custom Grav page you wish to use for maintenance
+    
+fr:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Site hors ligne\n## Revenez ultérieurement s'il vous plait..."
+    AUTHORIZED_ACCESS: "**Accès Autorisé Obligatoire**"
+    BLUEPRINTS:
+      STATUS: Etat du plugin
+      MODE: Mode maintenance
+      MODE_HELP: Bascule le mode de maintenance sur on ou off, pour l'ensemble du site
+      ALLOW_LOGIN: Autorise la connexion
+      ALLOW_LOGIN_HELP: Si vous voulez fournir un formulaire de connexion pour les utilisateurs autorisés à accéder au site
+      ACCESS: Accès connexion
+      ACCESS_HELP: "La chaîne d'autorisation ACL doit être à true pour que l'utilisateur accède au site"
+      PAGE_ROUTE: Route page de maintenance
+      PAGE_ROUTE_HELP: Le chemin de la route vers la page personnalisée de Grav que vous souhaitez utiliser pour la maintenance
