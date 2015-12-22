@@ -64,5 +64,5 @@ form:
         label: PLUGIN_MAINTENANCE.BLUEPRINTS.PAGE_ROUTE
         help: PLUGIN_MAINTENANCE.BLUEPRINTS.PAGE_ROUTE_HELP
         size: medium
-        placeholder: /maintenanace
+        placeholder: /maintenance
 
