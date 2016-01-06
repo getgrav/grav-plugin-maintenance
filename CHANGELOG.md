@@ -1,3 +1,11 @@
+# v1.0.2
+## 09/01/2015
+
+1. [](#bugfix)
+    * Fixed the default placeholder for the maintenance page route in Admin
+1. [](#new)
+    * Added french translation
+
 # v1.0.1
 ## 09/01/2015
 
