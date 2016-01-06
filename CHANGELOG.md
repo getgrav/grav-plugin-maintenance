@@ -1,5 +1,5 @@
 # v1.0.2
-## 09/01/2015
+## 01/06/2016
 
 1. [](#bugfix)
     * Fixed the default placeholder for the maintenance page route in Admin
