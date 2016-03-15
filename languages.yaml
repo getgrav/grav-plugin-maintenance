@@ -27,3 +27,18 @@ fr:
       ACCESS_HELP: "La chaîne d'autorisation ACL doit être à true pour que l'utilisateur accède au site"
       PAGE_ROUTE: Route page de maintenance
       PAGE_ROUTE_HELP: Le chemin de la route vers la page personnalisée de Grav que vous souhaitez utiliser pour la maintenance
+
+de:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Site Offline\n## Bitte kommen Sie bald wieder..."
+    AUTHORIZED_ACCESS: "**Autorisierter Zugang erforderlich**"
+    BLUEPRINTS:
+      STATUS: Plugin-Status
+      MODE: Wartungsmodus
+      MODE_HELP: Schaltet den Wartungsmodus auf der Website an oder aus
+      ALLOW_LOGIN: Erlaube Login
+      ALLOW_LOGIN_HELP: Wenn Sie ein Login-Formular anbieten wollen, um autorisierten Nutzern Zugang zur Website zu gewähren
+      ACCESS: Login-Zugang
+      ACCESS_HELP: Der ACL-String, der gesetzt sein muss, damit dieser Nutzer Zugang zur Website hat
+      PAGE_ROUTE: Pfad zur Wartungs-Seite
+      PAGE_ROUTE_HELP: Der Pfad zu der benutzerdefinierten Grav-Seite, die Sie für die Wartung nutzen wollen
