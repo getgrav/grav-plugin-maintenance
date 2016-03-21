@@ -10,8 +10,10 @@ form:
         - name: username
           type: text
           placeholder: Username
+          label: PLUGIN_LOGIN.USERNAME
 
         - name: password
           type: password
           placeholder: Password
+          label: PLUGIN_LOGIN.PASSWORD
 ---
