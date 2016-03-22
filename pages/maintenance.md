@@ -11,6 +11,7 @@ form:
           type: text
           placeholder: Username
           label: PLUGIN_LOGIN.USERNAME
+          autofocus: true
 
         - name: password
           type: password
