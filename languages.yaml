@@ -12,7 +12,7 @@ en:
       ACCESS_HELP: The ACL authorization string that must be true for a user to access the site
       PAGE_ROUTE: Maintenance page route
       PAGE_ROUTE_HELP: The route path to the custom Grav page you wish to use for maintenance
-    
+
 fr:
   PLUGIN_MAINTENANCE:
     OFFLINE_MARKDOWN: "# Site hors ligne\n## Revenez ultérieurement s'il vous plait..."
