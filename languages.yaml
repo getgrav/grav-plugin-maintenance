@@ -12,7 +12,7 @@ en:
       ACCESS_HELP: The ACL authorization string that must be true for a user to access the site
       PAGE_ROUTE: Maintenance page route
       PAGE_ROUTE_HELP: The route path to the custom Grav page you wish to use for maintenance
-    
+
 fr:
   PLUGIN_MAINTENANCE:
     OFFLINE_MARKDOWN: "# Site hors ligne\n## Revenez ultérieurement s'il vous plait..."
@@ -27,3 +27,48 @@ fr:
       ACCESS_HELP: "La chaîne d'autorisation ACL doit être à true pour que l'utilisateur accède au site"
       PAGE_ROUTE: Route page de maintenance
       PAGE_ROUTE_HELP: Le chemin de la route vers la page personnalisée de Grav que vous souhaitez utiliser pour la maintenance
+
+zh-cn:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# 网站正在维护\n## 请稍后访问..."
+    AUTHORIZED_ACCESS: "**需要登录**"
+    BLUEPRINTS:
+      STATUS: 插件状态
+      MODE: 维护模式
+      MODE_HELP: 控制全站维护模式的打开与关闭
+      ALLOW_LOGIN: 允许登录
+      ALLOW_LOGIN_HELP: 若您需要给授权用户提供登录页面以访问网站
+      ACCESS: 登录控制
+      ACCESS_HELP: 用户若需登录，此权限控制项目必须为真
+      PAGE_ROUTE: 维护页面路径
+      PAGE_ROUTE_HELP: 您可以自定义一个 Grav 页面作为维护页面
+
+zh-hk:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# 網站正在維護\n## 請稍後訪問..."
+    AUTHORIZED_ACCESS: "**需要登錄**"
+    BLUEPRINTS:
+      STATUS: 外掛狀態
+      MODE: 維護模式
+      MODE_HELP: 控制全站維護模式的打開與關閉
+      ALLOW_LOGIN: 允許登錄
+      ALLOW_LOGIN_HELP: 若您需要給授權用戶提供登入界面以訪問網站
+      ACCESS: 登入控制
+      ACCESS_HELP: 用戶若需登入，此權限控制項目必須為真
+      PAGE_ROUTE: 維護頁面路徑
+      PAGE_ROUTE_HELP: 您可以自定義一個 Grav 頁面作為維護頁面
+
+zh-tw:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# 網站正在維護\n## 請稍後訪問..."
+    AUTHORIZED_ACCESS: "**需要登錄**"
+    BLUEPRINTS:
+      STATUS: 外掛狀態
+      MODE: 維護模式
+      MODE_HELP: 控制全站維護模式的打開與關閉
+      ALLOW_LOGIN: 允許登錄
+      ALLOW_LOGIN_HELP: 若您需要給授權用戶提供登入界面以訪問網站
+      ACCESS: 登入控制
+      ACCESS_HELP: 用戶若需登入，此權限控制項目必須為真
+      PAGE_ROUTE: 維護頁面路徑
+      PAGE_ROUTE_HELP: 您可以自定義一個 Grav 頁面作為維護頁面
