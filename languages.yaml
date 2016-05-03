@@ -15,18 +15,18 @@ en:
 
 fr:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# Site hors ligne\n## Revenez ultérieurement s'il vous plait..."
-    AUTHORIZED_ACCESS: "**Accès Autorisé Obligatoire**"
+    OFFLINE_MARKDOWN: "# Site hors ligne\n## Veuillez revenir ultérieurement..."
+    AUTHORIZED_ACCESS: "**Accès autorisé obligatoire**"
     BLUEPRINTS:
-      STATUS: Etat du plugin
+      STATUS: Statut du plugin
       MODE: Mode maintenance
-      MODE_HELP: Bascule le mode de maintenance sur on ou off, pour l'ensemble du site
-      ALLOW_LOGIN: Autorise la connexion
-      ALLOW_LOGIN_HELP: Si vous voulez fournir un formulaire de connexion pour les utilisateurs autorisés à accéder au site
+      MODE_HELP: Basculer le mode de maintenance sur on ou off, pour l'ensemble du site
+      ALLOW_LOGIN: Autoriser la connexion
+      ALLOW_LOGIN_HELP: Si vous souhaitez proposer un formulaire de connexion pour les utilisateurs autorisés à accéder au site.
       ACCESS: Accès connexion
-      ACCESS_HELP: "La chaîne d'autorisation ACL doit être à true pour que l'utilisateur accède au site"
-      PAGE_ROUTE: Route page de maintenance
-      PAGE_ROUTE_HELP: Le chemin de la route vers la page personnalisée de Grav que vous souhaitez utiliser pour la maintenance
+      ACCESS_HELP: "La chaîne d'autorisation ACL doit être définie sur true pour que l'utilisateur accède au site."
+      PAGE_ROUTE: Chemin de la page de maintenance
+      PAGE_ROUTE_HELP: Le chemin vers la page personnalisée de Grav que vous souhaitez utiliser lors de la maintenance.
 
 zh-cn:
   PLUGIN_MAINTENANCE:
@@ -72,3 +72,18 @@ zh-tw:
       ACCESS_HELP: 用戶若需登入，此權限控制項目必須為真
       PAGE_ROUTE: 維護頁面路徑
       PAGE_ROUTE_HELP: 您可以自定義一個 Grav 頁面作為維護頁面
+
+de:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Site Offline\n## Bitte kommen Sie bald wieder..."
+    AUTHORIZED_ACCESS: "**Autorisierter Zugang erforderlich**"
+    BLUEPRINTS:
+      STATUS: Plugin-Status
+      MODE: Wartungsmodus
+      MODE_HELP: Schaltet den Wartungsmodus auf der Website an oder aus
+      ALLOW_LOGIN: Erlaube Login
+      ALLOW_LOGIN_HELP: Wenn Sie ein Login-Formular anbieten wollen, um autorisierten Nutzern Zugang zur Website zu gewähren
+      ACCESS: Login-Zugang
+      ACCESS_HELP: Der ACL-String, der gesetzt sein muss, damit dieser Nutzer Zugang zur Website hat
+      PAGE_ROUTE: Pfad zur Wartungs-Seite
+      PAGE_ROUTE_HELP: Der Pfad zu der benutzerdefinierten Grav-Seite, die Sie für die Wartung nutzen wollen
