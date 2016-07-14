@@ -1,3 +1,9 @@
+# v1.2.0
+## 07/14/2016
+
+1. [](#new)
+    * Allow translation of the maintenance login form
+
 # v1.1.0
 ## 05/03/2016
 
