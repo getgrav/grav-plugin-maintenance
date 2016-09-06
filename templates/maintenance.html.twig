@@ -6,7 +6,7 @@
 
     {% if maintenance.allow_login and not grav.user.authenticated %}
         <div id="maintenance-login" style="text-align: center;">
-            {% include 'partials/login-form.html.twig' with {content: 'PLUGIN_MAINTENANCE.AUTHORIZED_ACCESS'|t|markdown }%}
+            {% include 'partials/login-form.html.twig' with {content: 'PLUGIN_MAINTENANCE.AUTHORIZED_ACCESS'|t|markdown, show_login_form: true }%}
         </div>
     {% endif %}
 {% endblock %}

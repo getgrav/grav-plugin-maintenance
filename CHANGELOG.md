@@ -1,8 +1,10 @@
 # v1.x.x
-## 08/xx/2016
+## 09/xx/2016
 
 1. [](#improved)
     * Added Romanian translation
+1. [](#bugfix)
+	* Fix Login form not appearing [#11](https://github.com/getgrav/grav-plugin-maintenance/issues/11)
 
 # v1.2.0
 ## 07/14/2016
