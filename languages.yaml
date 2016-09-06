@@ -87,3 +87,17 @@ de:
       ACCESS_HELP: Der ACL-String, der gesetzt sein muss, damit dieser Nutzer Zugang zur Website hat
       PAGE_ROUTE: Pfad zur Wartungs-Seite
       PAGE_ROUTE_HELP: Der Pfad zu der benutzerdefinierten Grav-Seite, die Sie für die Wartung nutzen wollen
+ro:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Site nu este disponibil\n## Vă rugăm reveniți în curând ..."
+    AUTHORIZED_ACCESS: "**Este necesar accesul autorizat**"
+    BLUEPRINTS:
+      STATUS:  "Status modul "
+      MODE: "Mod mentenanță"
+      MODE_HELP: " Comutați modul de mentenanță pentru intregul site "
+      ALLOW_LOGIN: "Permiteți logarea"
+      ALLOW_LOGIN_HELP: "Dacă doriți să pemiteți accesul utilizatorilor autorizati pe site"
+      ACCESS: "Logare pentru acces " 
+      ACCESS_HELP: " Șirul de autorizare din ACL ce trebuie să fie true pentru ca un utilizator să poată accesa site-ul."
+      PAGE_ROUTE: " Ruta paginei de mentenanță " 
+      PAGE_ROUTE_HELP: " Calea rutei către pagina din Grav pe care doriți să o folosiți pentru mentenanță."   
