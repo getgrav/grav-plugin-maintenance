@@ -1,10 +1,16 @@
+# v1.2.2
+## xx/xx/2017
+
+1. [](#bugfix)
+    * Fixed plugin not working with Twig setting `Autoescape variables` set to `Yes`
+
 # v1.2.1
 ## 09/06/2016
 
 1. [](#improved)
     * Added Romanian translation
 1. [](#bugfix)
-	* Fix Login form not appearing [#11](https://github.com/getgrav/grav-plugin-maintenance/issues/11)
+    * Fix Login form not appearing [#11](https://github.com/getgrav/grav-plugin-maintenance/issues/11)
 
 # v1.2.0
 ## 07/14/2016
