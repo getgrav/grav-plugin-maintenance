@@ -1,8 +1,12 @@
-# v1.2.2
+# v1.3.0
 ## xx/xx/2017
 
+1. [](#new)
+    * Added event `getMaintenancePage` to allow theme or plugin to override maintenance page
 1. [](#bugfix)
     * Fixed plugin not working with Twig setting `Autoescape variables` set to `Yes`
+    * Fixed `Login access` setting having no effect
+    * Prevent other plugins from overriding maintenance page
 
 # v1.2.1
 ## 09/06/2016

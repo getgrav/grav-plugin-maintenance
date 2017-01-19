@@ -4,11 +4,11 @@ namespace Grav\Plugin;
 use Grav\Common\Plugin;
 use Grav\Common\Page\Page;
 use Grav\Common\Page\Pages;
+use Grav\Common\User\User;
+use RocketTheme\Toolbox\Event\Event;
 
 class MaintenancePlugin extends Plugin
 {
-    public $maintenance;
-
     /**
      * @return array
      */
@@ -29,50 +29,79 @@ class MaintenancePlugin extends Plugin
             return;
         }
 
-        $this->maintenance = $this->config->get('plugins.maintenance');
-
         $this->enable([
-            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
-            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
-            'onPageInitialized' => ['onPageInitialized', 0]
+            'onPagesInitialized' => ['onPagesInitialized', 1000000]
         ]);
     }
 
     /**
      * Initialize a maintenance page
      */
-    public function onPageInitialized()
+    public function onPagesInitialized(Event $event)
     {
+        $config = $this->config();
+
+        if (!$config['active']) {
+            return;
+        }
+
+        /** @var User $user */
         $user = $this->grav['user'];
+        if ($user->authenticated && $user->authorize($config['login_access'] ?: 'site.login')) {
+            // User has been logged in and has permission to access the site when it is in maintenance mode.
+            return;
+        }
 
-        $user->authorise($this->maintenance['login_access']);
+        $event = new Event();
+        $event->config = $config;
+        $event->page = null;
 
-        if ($this->maintenance['active']) {
-            if (!$user->authenticated) {
-                /** @var $page */
-                $page = null;
+        // First attempt to get maintenance page by firing getMaintenancePage event.
+        $result = $this->grav->fireEvent('getMaintenancePage', $event);
 
+        /** @var Page $page */
+        $page = isset($event->page) ? $event->page : null;
+
+        if (!$page) {
+            // Get the custom page route if specified
+            $custom_page_route = $this->config->get('plugins.maintenance.maintenance_page_route');
+
+            if ($custom_page_route) {
                 /** @var Pages $pages */
                 $pages = $this->grav['pages'];
 
-                // Get the custom page route if specified
-                $custom_page_route = $this->config->get('plugins.maintenance.maintenance_page_route');
-                if ($custom_page_route) {
-                    // Try to load user error page.
-                    $page = $pages->dispatch($custom_page_route, true);
-                }
-
-                // If no page found yet, use the built-in one...
-                if (!$page) {
-                    $page = new Page;
-                    $page->init(new \SplFileInfo(__DIR__ . "/pages/maintenance.md"));
-                }
-
-                // unset the old page, and use the new one
-                unset($this->grav['page']);
-                $this->grav['page'] = $page;
+                // Try to load user error page.
+                $page = $pages->dispatch($custom_page_route, true);
             }
         }
+
+        // If no page found yet, use the built-in one...
+        if (!$page) {
+            $page = new Page;
+            $page->init(new \SplFileInfo(__DIR__ . "/pages/maintenance.md"));
+        }
+
+        // unset the old page, and use the new one
+        unset($this->grav['page']);
+        $this->grav['page'] = $page;
+
+        $this->enable([
+            'onPageInitialized' => ['stopPropagation', 1000000],
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
+            'onTwigSiteVariables' => ['onTwigSiteVariables', 0]
+        ]);
+
+        // Site is on maintenance, prevent other plugins from running.
+        $event->stopPropagation();
+    }
+
+    /**
+     * @param Event $event
+     */
+    public function stopPropagation(Event $event)
+    {
+        // Site is on maintenance, prevent other plugins from running.
+        $event->stopPropagation();
     }
 
     /**
@@ -91,8 +120,9 @@ class MaintenancePlugin extends Plugin
         /** @var User $user */
         $user = $this->grav['user'];
 
-        if ($this->maintenance['active'] && !$user->authenticated) {
-            $this->grav['twig']->twig_vars['maintenance'] = $this->maintenance;
+        $config = $this->config();
+        if ($config['active'] && !$user->authenticated) {
+            $this->grav['twig']->twig_vars['maintenance'] = $config;
         }
     }
 }
