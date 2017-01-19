@@ -3,10 +3,11 @@
 
 1. [](#new)
     * Added event `getMaintenancePage` to allow theme or plugin to override maintenance page
+    * Added event `onMaintenancePage` which replaces `onPageInitialized` event
 1. [](#bugfix)
     * Fixed plugin not working with Twig setting `Autoescape variables` set to `Yes`
     * Fixed `Login access` setting having no effect
-    * Prevent other plugins from overriding maintenance page
+    * Prevent other plugins from overriding maintenance page by blocking `onPage(s)Initialized` events
 
 # v1.2.1
 ## 09/06/2016

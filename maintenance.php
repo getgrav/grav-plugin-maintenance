@@ -30,12 +30,15 @@ class MaintenancePlugin extends Plugin
         }
 
         $this->enable([
-            'onPagesInitialized' => ['onPagesInitialized', 1000000]
+            'onPagesInitialized' => ['onPagesInitialized', 1000000],
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
         ]);
     }
 
     /**
      * Initialize a maintenance page
+     *
+     * @param Event $event
      */
     public function onPagesInitialized(Event $event)
     {
@@ -52,15 +55,15 @@ class MaintenancePlugin extends Plugin
             return;
         }
 
-        $event = new Event();
-        $event->config = $config;
-        $event->page = null;
+        $pageEvent = new Event();
+        $pageEvent->config = $config;
+        $pageEvent->page = null;
 
         // First attempt to get maintenance page by firing getMaintenancePage event.
-        $result = $this->grav->fireEvent('getMaintenancePage', $event);
+        $this->grav->fireEvent('getMaintenancePage', $pageEvent);
 
         /** @var Page $page */
-        $page = isset($event->page) ? $event->page : null;
+        $page = isset($pageEvent->page) ? $pageEvent->page : null;
 
         if (!$page) {
             // Get the custom page route if specified
@@ -86,8 +89,7 @@ class MaintenancePlugin extends Plugin
         $this->grav['page'] = $page;
 
         $this->enable([
-            'onPageInitialized' => ['stopPropagation', 1000000],
-            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
+            'onPageInitialized' => ['onPageInitialized', 1000000],
             'onTwigSiteVariables' => ['onTwigSiteVariables', 0]
         ]);
 
@@ -98,8 +100,10 @@ class MaintenancePlugin extends Plugin
     /**
      * @param Event $event
      */
-    public function stopPropagation(Event $event)
+    public function onPageInitialized(Event $event)
     {
+        $this->grav->fireEvent('onMaintenancePage', $event);
+
         // Site is on maintenance, prevent other plugins from running.
         $event->stopPropagation();
     }
