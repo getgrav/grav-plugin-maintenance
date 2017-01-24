@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {{ 'PLUGIN_MAINTENANCE.OFFLINE_MARKDOWN'|t|markdown }}
+    {{ 'PLUGIN_MAINTENANCE.OFFLINE_MARKDOWN'|t|markdown|raw }}
 
     {% if maintenance.allow_login and not grav.user.authenticated %}
         <div id="maintenance-login" style="text-align: center;">

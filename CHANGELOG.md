@@ -1,10 +1,21 @@
+# v1.3.0
+## 01/24/2017
+
+1. [](#new)
+    * Added event `getMaintenancePage` to allow theme or plugin to override maintenance page
+    * Added event `onMaintenancePage` which replaces `onPageInitialized` event
+1. [](#bugfix)
+    * Fixed plugin not working with Twig setting `Autoescape variables` set to `Yes`
+    * Fixed `Login access` setting having no effect
+    * Prevent other plugins from overriding maintenance page by blocking `onPage(s)Initialized` events
+
 # v1.2.1
 ## 09/06/2016
 
 1. [](#improved)
     * Added Romanian translation
 1. [](#bugfix)
-	* Fix Login form not appearing [#11](https://github.com/getgrav/grav-plugin-maintenance/issues/11)
+    * Fix Login form not appearing [#11](https://github.com/getgrav/grav-plugin-maintenance/issues/11)
 
 # v1.2.0
 ## 07/14/2016
