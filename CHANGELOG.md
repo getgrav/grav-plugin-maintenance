@@ -1,5 +1,5 @@
 # v1.3.0
-## xx/xx/2017
+## 01/24/2017
 
 1. [](#new)
     * Added event `getMaintenancePage` to allow theme or plugin to override maintenance page
