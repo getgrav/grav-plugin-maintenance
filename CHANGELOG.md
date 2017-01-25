@@ -1,3 +1,9 @@
+# v1.x.x
+## xx/xx/2017
+
+1. [](#new)
+    * Added spanish translation
+
 # v1.3.0
 ## 01/24/2017
 
