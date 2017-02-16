@@ -5,6 +5,8 @@ form:
     name: login
     action:
     method: post
+    login:
+        forgot_button: false
 
     fields:
         - name: username
