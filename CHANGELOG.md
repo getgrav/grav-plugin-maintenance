@@ -1,5 +1,5 @@
-# v1.x.x
-## xx/xx/2017
+# v1.3.1
+## 02/17/2017
 
 1. [](#new)
     * Added spanish translation
