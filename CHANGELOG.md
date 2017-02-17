@@ -1,3 +1,11 @@
+# v1.3.1
+## 02/17/2017
+
+1. [](#new)
+    * Added spanish translation
+1. [](#bugfix)
+    * Hide the forgot button [#17](https://github.com/getgrav/grav-plugin-maintenance/issues/17)
+
 # v1.3.0
 ## 01/24/2017
 
