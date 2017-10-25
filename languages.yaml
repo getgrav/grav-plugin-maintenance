@@ -1,7 +1,7 @@
 en:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: Site Offline
-    OFFLINE_MARKDOWN_H2: Please check back soon...
+    OFFLINE_H1: Site Offline
+    OFFLINE_H2: Please check back soon...
     AUTHORIZED_ACCESS: Authorized Access Required
     BLUEPRINTS:
       STATUS: Plugin status
@@ -16,8 +16,8 @@ en:
 
 es:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: Sitio offline
-    OFFLINE_MARKDOWN_H2: Por favor inténtalo mas tarde...
+    OFFLINE_H1: Sitio offline
+    OFFLINE_H2: Por favor inténtalo mas tarde...
     AUTHORIZED_ACCESS: Se requiere acceso autorizado
     BLUEPRINTS:
       STATUS: Estado del plugin
@@ -32,8 +32,8 @@ es:
 
 fr:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: Site hors ligne
-    OFFLINE_MARKDOWN_H2: Veuillez revenir ultérieurement...
+    OFFLINE_H1: Site hors ligne
+    OFFLINE_H2: Veuillez revenir ultérieurement...
     AUTHORIZED_ACCESS: Accès autorisé obligatoire
     BLUEPRINTS:
       STATUS: Statut du plugin
@@ -48,8 +48,8 @@ fr:
 
 zh-cn:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: 网站正在维护
-    OFFLINE_MARKDOWN_H2: 请稍后访问...
+    OFFLINE_H1: 网站正在维护
+    OFFLINE_H2: 请稍后访问...
     AUTHORIZED_ACCESS: 需要登录
     BLUEPRINTS:
       STATUS: 插件状态
@@ -64,8 +64,8 @@ zh-cn:
 
 zh-hk:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: 網站正在維護
-    OFFLINE_MARKDOWN_H2: 請稍後訪問...
+    OFFLINE_H1: 網站正在維護
+    OFFLINE_H2: 請稍後訪問...
     AUTHORIZED_ACCESS: 需要登錄
     BLUEPRINTS:
       STATUS: 外掛狀態
@@ -80,8 +80,8 @@ zh-hk:
 
 zh-tw:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: 網站正在維護
-    OFFLINE_MARKDOWN_H2: 請稍後訪問...
+    OFFLINE_H1: 網站正在維護
+    OFFLINE_H2: 請稍後訪問...
     AUTHORIZED_ACCESS: 需要登錄
     BLUEPRINTS:
       STATUS: 外掛狀態
@@ -96,8 +96,8 @@ zh-tw:
 
 de:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: Site Offline
-    OFFLINE_MARKDOWN_H2: Bitte kommen Sie bald wieder...
+    OFFLINE_H1: Site Offline
+    OFFLINE_H2: Bitte kommen Sie bald wieder...
     AUTHORIZED_ACCESS: Autorisierter Zugang erforderlich
     BLUEPRINTS:
       STATUS: Plugin-Status
@@ -111,8 +111,8 @@ de:
       PAGE_ROUTE_HELP: Der Pfad zu der benutzerdefinierten Grav-Seite, die Sie für die Wartung nutzen wollen
 ro:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN_H1: Site nu este disponibil
-    OFFLINE_MARKDOWN_H2: Vă rugăm reveniți în curând ...
+    OFFLINE_H1: Site nu este disponibil
+    OFFLINE_H2: Vă rugăm reveniți în curând ...
     AUTHORIZED_ACCESS: Este necesar accesul autorizat
     BLUEPRINTS:
       STATUS:  "Status modul "
