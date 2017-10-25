@@ -2,8 +2,8 @@
 
 {% block content %}
 
-    <h1>{{ OFFLINE_MARKDOWN_H1 }}</h1>
-    <h2>{{ OFFLINE_MARKDOWN_H2 }}</h2>
+    <h1>{{ OFFLINE_MARKDOWN_H1|t }}</h1>
+    <h2>{{ OFFLINE_MARKDOWN_H2|t }}</h2>
 
     {% if maintenance.allow_login and not grav.user.authenticated %}
         <div id="maintenance-login" style="text-align: center;">
