@@ -2,11 +2,12 @@
 
 {% block content %}
 
-    {{ page.content|default('PLUGIN_MAINTENANCE.OFFLINE_MARKDOWN'|t|markdown|raw) }}
+    <h1>{{ OFFLINE_MARKDOWN_H1 }}</h1>
+    <h2>{{ OFFLINE_MARKDOWN_H2 }}</h2>
 
     {% if maintenance.allow_login and not grav.user.authenticated %}
         <div id="maintenance-login" style="text-align: center;">
-            {% include 'partials/login-form.html.twig' with {content: 'PLUGIN_MAINTENANCE.AUTHORIZED_ACCESS'|t|markdown, show_login_form: true }%}
+            {% include 'partials/login-form.html.twig' with {content: 'PLUGIN_MAINTENANCE.AUTHORIZED_ACCESS'|t, show_login_form: true }%}
         </div>
     {% endif %}
 {% endblock %}
