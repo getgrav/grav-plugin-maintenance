@@ -1,7 +1,8 @@
 en:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# Site Offline\n## Please check back soon..."
-    AUTHORIZED_ACCESS: "**Authorized Access Required**"
+    OFFLINE_MARKDOWN_H1: Site Offline
+    OFFLINE_MARKDOWN_H2: Please check back soon...
+    AUTHORIZED_ACCESS: Authorized Access Required
     BLUEPRINTS:
       STATUS: Plugin status
       MODE: Maintenance mode
@@ -15,23 +16,25 @@ en:
 
 es:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# Sitio offline\n## Por favor, inténtalo más tarde..."
-    AUTHORIZED_ACCESS: "**Se requiere acceso autorizado**"
+    OFFLINE_MARKDOWN_H1: Sitio offline
+    OFFLINE_MARKDOWN_H2: Por favor inténtalo mas tarde...
+    AUTHORIZED_ACCESS: Se requiere acceso autorizado
     BLUEPRINTS:
       STATUS: Estado del plugin
       MODE: Modo mantenimiento
       MODE_HELP: Activa o desactiva el modo mantenimiento, en todo el sitio
       ALLOW_LOGIN: Permitir acceso
       ALLOW_LOGIN_HELP: Si deseas proporcionar un formulario de inicio de sesión para que los usuarios autorizados puedan acceder al sitio
-      ACCESS: Acceso
+      ACCESS: Accesso
       ACCESS_HELP: La cadena de autorización ACL que debe ser verdadera para que un usuario acceda al sitio
       PAGE_ROUTE: Ruta de la página de mantenimiento
       PAGE_ROUTE_HELP: La ruta de acceso a la página Grav personalizada que deseas utilizar para el mantenimiento
 
 fr:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# Site hors ligne\n## Veuillez revenir ultérieurement..."
-    AUTHORIZED_ACCESS: "**Accès autorisé obligatoire**"
+    OFFLINE_MARKDOWN_H1: Site hors ligne
+    OFFLINE_MARKDOWN_H2: Veuillez revenir ultérieurement...
+    AUTHORIZED_ACCESS: Accès autorisé obligatoire
     BLUEPRINTS:
       STATUS: Statut du plugin
       MODE: Mode maintenance
@@ -45,8 +48,9 @@ fr:
 
 zh-cn:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# 网站正在维护\n## 请稍后访问..."
-    AUTHORIZED_ACCESS: "**需要登录**"
+    OFFLINE_MARKDOWN_H1: 网站正在维护
+    OFFLINE_MARKDOWN_H2: 请稍后访问...
+    AUTHORIZED_ACCESS: 需要登录
     BLUEPRINTS:
       STATUS: 插件状态
       MODE: 维护模式
@@ -60,8 +64,9 @@ zh-cn:
 
 zh-hk:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# 網站正在維護\n## 請稍後訪問..."
-    AUTHORIZED_ACCESS: "**需要登錄**"
+    OFFLINE_MARKDOWN_H1: 網站正在維護
+    OFFLINE_MARKDOWN_H2: 請稍後訪問...
+    AUTHORIZED_ACCESS: 需要登錄
     BLUEPRINTS:
       STATUS: 外掛狀態
       MODE: 維護模式
@@ -75,8 +80,9 @@ zh-hk:
 
 zh-tw:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# 網站正在維護\n## 請稍後訪問..."
-    AUTHORIZED_ACCESS: "**需要登錄**"
+    OFFLINE_MARKDOWN_H1: 網站正在維護
+    OFFLINE_MARKDOWN_H2: 請稍後訪問...
+    AUTHORIZED_ACCESS: 需要登錄
     BLUEPRINTS:
       STATUS: 外掛狀態
       MODE: 維護模式
@@ -90,8 +96,9 @@ zh-tw:
 
 de:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# Site Offline\n## Bitte kommen Sie bald wieder..."
-    AUTHORIZED_ACCESS: "**Autorisierter Zugang erforderlich**"
+    OFFLINE_MARKDOWN_H1: Site Offline
+    OFFLINE_MARKDOWN_H2: Bitte kommen Sie bald wieder...
+    AUTHORIZED_ACCESS: Autorisierter Zugang erforderlich
     BLUEPRINTS:
       STATUS: Plugin-Status
       MODE: Wartungsmodus
@@ -104,15 +111,16 @@ de:
       PAGE_ROUTE_HELP: Der Pfad zu der benutzerdefinierten Grav-Seite, die Sie für die Wartung nutzen wollen
 ro:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# Site nu este disponibil\n## Vă rugăm reveniți în curând ..."
-    AUTHORIZED_ACCESS: "**Este necesar accesul autorizat**"
+    OFFLINE_MARKDOWN_H1: Site nu este disponibil
+    OFFLINE_MARKDOWN_H2: Vă rugăm reveniți în curând ...
+    AUTHORIZED_ACCESS: Este necesar accesul autorizat
     BLUEPRINTS:
       STATUS:  "Status modul "
       MODE: "Mod mentenanță"
       MODE_HELP: " Comutați modul de mentenanță pentru intregul site "
       ALLOW_LOGIN: "Permiteți logarea"
       ALLOW_LOGIN_HELP: "Dacă doriți să pemiteți accesul utilizatorilor autorizati pe site"
-      ACCESS: "Logare pentru acces " 
+      ACCESS: "Logare pentru acces "
       ACCESS_HELP: " Șirul de autorizare din ACL ce trebuie să fie true pentru ca un utilizator să poată accesa site-ul."
-      PAGE_ROUTE: " Ruta paginei de mentenanță " 
-      PAGE_ROUTE_HELP: " Calea rutei către pagina din Grav pe care doriți să o folosiți pentru mentenanță."   
+      PAGE_ROUTE: " Ruta paginei de mentenanță "
+      PAGE_ROUTE_HELP: " Calea rutei către pagina din Grav pe care doriți să o folosiți pentru mentenanță."
