@@ -15,7 +15,7 @@ en:
 
 es:
   PLUGIN_MAINTENANCE:
-    OFFLINE_MARKDOWN: "# Sitio offline\n## Por favor inténtalo mas tarde..."
+    OFFLINE_MARKDOWN: "# Sitio offline\n## Por favor, inténtalo más tarde..."
     AUTHORIZED_ACCESS: "**Se requiere acceso autorizado**"
     BLUEPRINTS:
       STATUS: Estado del plugin
@@ -23,7 +23,7 @@ es:
       MODE_HELP: Activa o desactiva el modo mantenimiento, en todo el sitio
       ALLOW_LOGIN: Permitir acceso
       ALLOW_LOGIN_HELP: Si deseas proporcionar un formulario de inicio de sesión para que los usuarios autorizados puedan acceder al sitio
-      ACCESS: Accesso
+      ACCESS: Acceso
       ACCESS_HELP: La cadena de autorización ACL que debe ser verdadera para que un usuario acceda al sitio
       PAGE_ROUTE: Ruta de la página de mantenimiento
       PAGE_ROUTE_HELP: La ruta de acceso a la página Grav personalizada que deseas utilizar para el mantenimiento
