@@ -50,7 +50,7 @@ class MaintenancePlugin extends Plugin
 
         /** @var User $user */
         $user = $this->grav['user'];
-        if ($user->authenticated && $user->authorize($config['login_access'] ?: 'site.login')) {
+        if ($config['allow_login'] && $user->authenticated && $user->authorize($config['login_access'] ?: 'site.login')) {
             // User has been logged in and has permission to access the site when it is in maintenance mode.
             return;
         }

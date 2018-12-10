@@ -1,3 +1,9 @@
+# v1.3.2
+## 12/10/2018
+
+1. [](#bugfix)
+    * if `allow_login` is `false` don't allow a logged in user to skip maintenance page
+
 # v1.3.1
 ## 02/17/2017
 
