@@ -116,3 +116,18 @@ ro:
       ACCESS_HELP: " Șirul de autorizare din ACL ce trebuie să fie true pentru ca un utilizator să poată accesa site-ul."
       PAGE_ROUTE: " Ruta paginei de mentenanță " 
       PAGE_ROUTE_HELP: " Calea rutei către pagina din Grav pe care doriți să o folosiți pentru mentenanță."   
+
+it:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Il sito non è disponibile\n## Si prega di tornare più tardi..."
+    AUTHORIZED_ACCESS: "**Accesso autorizzato obbligatorio**"
+    BLUEPRINTS:
+      STATUS: Stato del plugin
+      MODE: Modalità mantenimento
+      MODE_HELP: Attiva o disattiva la modalità di mantenimento per tutto il sito
+      ALLOW_LOGIN: Permetti login
+      ALLOW_LOGIN_HELP: Se vuoi fornire un form di login per far accedere gli utenti autorizzati
+      ACCESS: Login di accesso
+      ACCESS_HELP: La stringa di atuorizzazione ACL deve essere vera per far accedere un utente al sito
+      PAGE_ROUTE: Rotta della pagina di mantenimento
+      PAGE_ROUTE_HELP: La rotta alla pagina custom di Grav che desideri usare per la modalità mantenimento
