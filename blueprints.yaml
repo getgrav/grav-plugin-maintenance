@@ -65,4 +65,11 @@ form:
         help: PLUGIN_MAINTENANCE.BLUEPRINTS.PAGE_ROUTE_HELP
         size: medium
         placeholder: /maintenance
+    
+    maintenance_status_code:
+        type: text
+        label: PLUGIN_MAINTENANCE.BLUEPRINTS.STATUS_CODE
+        help: PLUGIN_MAINTENANCE.BLUEPRINTS.STATUS_CODE_HELP
+        size: medium
+        default: 503
 

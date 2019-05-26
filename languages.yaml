@@ -12,6 +12,8 @@ en:
       ACCESS_HELP: The ACL authorization string that must be true for a user to access the site
       PAGE_ROUTE: Maintenance page route
       PAGE_ROUTE_HELP: The route path to the custom Grav page you wish to use for maintenance
+      STATUS_CODE: HTTP Response type
+      STATUS_CODE_HELP: Custom HTTP Response types code 
 
 es:
   PLUGIN_MAINTENANCE:
