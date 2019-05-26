@@ -45,6 +45,21 @@ fr:
       PAGE_ROUTE: Chemin de la page de maintenance
       PAGE_ROUTE_HELP: Le chemin vers la page personnalisée de Grav que vous souhaitez utiliser lors de la maintenance.
 
+ru:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Сайт оффлайн\n## Пожалуйста, зайдите в ближайшее время..."
+    AUTHORIZED_ACCESS: "**Требуется авторизация**"
+    BLUEPRINTS:
+      STATUS: Статус плагина
+      MODE: Режим обслуживания
+      MODE_HELP: Включить или выключить режим обслуживания
+      ALLOW_LOGIN: Разрешить авторизацию
+      ALLOW_LOGIN_HELP: Если вы хотите предоставить форму авторизации для доступа к сайту авторизованных пользователей
+      ACCESS: Вход в систему
+      ACCESS_HELP: Строка авторизации ACL, которая должна быть истинной для доступа пользователя к сайту
+      PAGE_ROUTE: Путь страницы обслуживания
+      PAGE_ROUTE_HELP: Путь к пользовательской странице Grav, которую вы хотите использовать во время обслуживания
+
 zh-cn:
   PLUGIN_MAINTENANCE:
     OFFLINE_MARKDOWN: "# 网站正在维护\n## 请稍后访问..."
