@@ -1,5 +1,5 @@
 ---
 title: Site Offline
 metadata:
-    robots: noindex
+    robots: noindex,nofollow
 ---
