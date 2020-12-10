@@ -109,6 +109,11 @@ class MaintenancePlugin extends Plugin
      */
     public function onPageInitialized(Event $event)
     {
+        // NOTE: We must add the form here and not in the onFormPageHeaderProcessed event.
+        // The mentioned event will run before onPagesInitialized, thatswhy the form will be
+        // added at this later stage.
+        $this->grav['page']->addForms([$this->grav['config']->get('plugins.maintenance.form')]);
+
         $this->grav->fireEvent('onMaintenancePage', $event);
 
         // Site is on maintenance, prevent other plugins from running.
