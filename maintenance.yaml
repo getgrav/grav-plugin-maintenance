@@ -3,3 +3,4 @@ active: false
 allow_login: true
 login_access: 'site.login'
 maintenance_page_route:
+maintenance_status_code: 503

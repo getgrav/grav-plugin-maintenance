@@ -79,8 +79,6 @@ class MaintenancePlugin extends Plugin
                 // Try to load user error page.
                 $page = $pages->dispatch($custom_page_route, true);
             }
-
-            
         }
 
         // If no page found yet, use the built-in one...
@@ -92,8 +90,8 @@ class MaintenancePlugin extends Plugin
         // unset the old page, and use the new one
         unset($this->grav['page']);
 
-        //Set good header
-        $page->modifyHeader('http_response_code', $this->config->get('plugins.maintenance.maintenance_status_code'));
+        // Set good header
+        $page->modifyHeader('http_response_code', $this->config->get('plugins.maintenance.maintenance_status_code', 503));
 
         $this->grav['page'] = $page;
 
