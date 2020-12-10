@@ -87,6 +87,12 @@ class MaintenancePlugin extends Plugin
             $page->init(new \SplFileInfo(__DIR__ . "/pages/maintenance.md"));
         }
 
+        // Set default expires for maintenance page.
+        $header = $page->header();
+        if (!isset($header->expires)) {
+            $page->expires(0);
+        }
+
         // unset the old page, and use the new one
         unset($this->grav['page']);
 
