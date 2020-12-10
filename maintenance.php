@@ -48,11 +48,14 @@ class MaintenancePlugin extends Plugin
             return;
         }
 
-        /** @var User $user */
-        $user = $this->grav['user'];
-        if ($config['allow_login'] && $user->authenticated && $user->authorize($config['login_access'] ?: 'site.login')) {
-            // User has been logged in and has permission to access the site when it is in maintenance mode.
-            return;
+        // Additional user authenticated check, if login plugin is enabled
+        if ($this->config->get('plugins.login.enabled', false)) {
+            /** @var User $user */
+            $user = $this->grav['user'];
+            if ($config['allow_login'] && $user->authenticated && $user->authorize($config['login_access'] ?: 'site.login')) {
+                // User has been logged in and has permission to access the site when it is in maintenance mode.
+                return;
+            }
         }
 
         $pageEvent = new Event();
@@ -127,12 +130,21 @@ class MaintenancePlugin extends Plugin
      */
     public function onTwigSiteVariables()
     {
-        /** @var User $user */
-        $user = $this->grav['user'];
-
+        // Make sure the plugin is active
         $config = $this->config();
-        if ($config['active'] && !$user->authenticated) {
-            $this->grav['twig']->twig_vars['maintenance'] = $config;
+        if (!$config['active']) {
+            return;
         }
+
+        // Additional user authenticated check, if login plugin is enabled
+        if ($this->config->get('plugins.login.enabled', false)) {
+            /** @var User $user */
+            $user = $this->grav['user'];
+            if ($user->authenticated) {
+                return;
+            }
+        }
+
+        $this->grav['twig']->twig_vars['maintenance'] = $config;
     }
 }
