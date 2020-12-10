@@ -57,7 +57,7 @@ form:
         label: PLUGIN_MAINTENANCE.BLUEPRINTS.ACCESS
         help: PLUGIN_MAINTENANCE.BLUEPRINTS.ACCESS_HELP
         size: medium
-        default: 'login_access'
+        default: 'site.login'
 
     maintenance_page_route:
         type: text
@@ -65,11 +65,10 @@ form:
         help: PLUGIN_MAINTENANCE.BLUEPRINTS.PAGE_ROUTE_HELP
         size: medium
         placeholder: /maintenance
-    
+
     maintenance_status_code:
         type: text
         label: PLUGIN_MAINTENANCE.BLUEPRINTS.STATUS_CODE
         help: PLUGIN_MAINTENANCE.BLUEPRINTS.STATUS_CODE_HELP
         size: medium
         default: 503
-
