@@ -148,3 +148,20 @@ it:
       ACCESS_HELP: La stringa di atuorizzazione ACL deve essere vera per far accedere un utente al sito
       PAGE_ROUTE: Rotta della pagina di mantenimento
       PAGE_ROUTE_HELP: La rotta alla pagina custom di Grav che desideri usare per la modalità mantenimento
+
+pt:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Site Em Manutenção\n## Por favor, volte mais tarde..."
+    AUTHORIZED_ACCESS: "**Necessário Acesso Autorizado**"
+    BLUEPRINTS:
+      STATUS: Status do plugin
+      MODE: Modo Em Manutenção
+      MODE_HELP: Ativar ou desativar o modo de manutenção afetará todo o site
+      ALLOW_LOGIN: Permitir login
+      ALLOW_LOGIN_HELP: Se você deseja fornecer um formulário de login para usuários autorizados acessarem o site
+      ACCESS: Acesso via Login
+      ACCESS_HELP: A string de autorização ACL deve ser verdadeira para um usuário acessar o site
+      PAGE_ROUTE: Rota da página de manutenção
+      PAGE_ROUTE_HELP: O caminho da rota para a página Grav personalizada que você deseja usar para manutenção
+      STATUS_CODE: Tipo de Resposta HTTP
+      STATUS_CODE_HELP: Código de resposta HTTP personalizado
