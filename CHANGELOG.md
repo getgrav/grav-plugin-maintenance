@@ -1,3 +1,12 @@
+# v1.3.3
+## 03/22/22
+
+1. [](#improved)
+    * Custom HTTP Status code [#28](https://github.com/getgrav/grav-plugin-maintenance/pull/28)
+    * Updated language codes to support Italian
+1. [](#bugfix)
+    * if auto-escape twig template [#36](https://github.com/getgrav/grav-plugin-maintenance/issues/36)
+
 # v1.3.2
 ## 12/10/2018
 
