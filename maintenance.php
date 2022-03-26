@@ -48,11 +48,14 @@ class MaintenancePlugin extends Plugin
             return;
         }
 
-        /** @var User $user */
-        $user = $this->grav['user'];
-        if ($config['allow_login'] && $user->authenticated && $user->authorize($config['login_access'] ?: 'site.login')) {
-            // User has been logged in and has permission to access the site when it is in maintenance mode.
-            return;
+        // Additional user authenticated check, if login plugin is enabled
+        if ($this->config->get('plugins.login.enabled', false)) {
+            /** @var User $user */
+            $user = $this->grav['user'];
+            if ($config['allow_login'] && $user->authenticated && $user->authorize($config['login_access'] ?: 'site.login')) {
+                // User has been logged in and has permission to access the site when it is in maintenance mode.
+                return;
+            }
         }
 
         $pageEvent = new Event();
@@ -76,8 +79,6 @@ class MaintenancePlugin extends Plugin
                 // Try to load user error page.
                 $page = $pages->dispatch($custom_page_route, true);
             }
-
-            
         }
 
         // If no page found yet, use the built-in one...
@@ -86,11 +87,17 @@ class MaintenancePlugin extends Plugin
             $page->init(new \SplFileInfo(__DIR__ . "/pages/maintenance.md"));
         }
 
+        // Set default expires for maintenance page.
+        $header = $page->header();
+        if (!isset($header->expires)) {
+            $page->expires(0);
+        }
+
         // unset the old page, and use the new one
         unset($this->grav['page']);
 
-        //Set good header
-        $page->modifyHeader('http_response_code', $this->config->get('plugins.maintenance.maintenance_status_code'));
+        // Set good header
+        $page->modifyHeader('http_response_code', $this->config->get('plugins.maintenance.maintenance_status_code', 503));
 
         $this->grav['page'] = $page;
 
@@ -108,6 +115,11 @@ class MaintenancePlugin extends Plugin
      */
     public function onPageInitialized(Event $event)
     {
+        // NOTE: We must add the form here and not in the onFormPageHeaderProcessed event.
+        // The mentioned event will run before onPagesInitialized, thatswhy the form will be
+        // added at this later stage.
+        $this->grav['page']->addForms([$this->grav['config']->get('plugins.maintenance.form')]);
+
         $this->grav->fireEvent('onMaintenancePage', $event);
 
         // Site is on maintenance, prevent other plugins from running.
@@ -127,12 +139,21 @@ class MaintenancePlugin extends Plugin
      */
     public function onTwigSiteVariables()
     {
-        /** @var User $user */
-        $user = $this->grav['user'];
-
+        // Make sure the plugin is active
         $config = $this->config();
-        if ($config['active'] && !$user->authenticated) {
-            $this->grav['twig']->twig_vars['maintenance'] = $config;
+        if (!$config['active']) {
+            return;
         }
+
+        // Additional user authenticated check, if login plugin is enabled
+        if ($this->config->get('plugins.login.enabled', false)) {
+            /** @var User $user */
+            $user = $this->grav['user'];
+            if ($user->authenticated) {
+                return;
+            }
+        }
+
+        $this->grav['twig']->twig_vars['maintenance'] = $config;
     }
 }

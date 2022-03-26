@@ -3,3 +3,23 @@ active: false
 allow_login: true
 login_access: 'site.login'
 maintenance_page_route:
+maintenance_status_code: 503
+
+form:
+    name: maintenance_login
+    action:
+    method: post
+    login:
+        forgot_button: false
+
+    fields:
+        - name: username
+          type: text
+          placeholder: PLUGIN_LOGIN.USERNAME
+          label: PLUGIN_LOGIN.USERNAME
+          autofocus: true
+
+        - name: password
+          type: password
+          placeholder: PLUGIN_LOGIN.PASSWORD
+          label: PLUGIN_LOGIN.PASSWORD
