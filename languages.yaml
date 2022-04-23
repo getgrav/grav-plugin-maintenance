@@ -37,13 +37,15 @@ fr:
     BLUEPRINTS:
       STATUS: Statut du plugin
       MODE: Mode maintenance
-      MODE_HELP: Basculer le mode de maintenance sur on ou off, pour l'ensemble du site
+      MODE_HELP: Basculer le mode de maintenance sur on ou off, pour l’ensemble du site
       ALLOW_LOGIN: Autoriser la connexion
       ALLOW_LOGIN_HELP: Si vous souhaitez proposer un formulaire de connexion pour les utilisateurs autorisés à accéder au site.
       ACCESS: Accès connexion
-      ACCESS_HELP: "La chaîne d'autorisation ACL doit être définie sur true pour que l'utilisateur accède au site."
+      ACCESS_HELP: La chaîne d’autorisation ACL doit être définie sur true pour que l’utilisateur accède au site.
       PAGE_ROUTE: Chemin de la page de maintenance
       PAGE_ROUTE_HELP: Le chemin vers la page personnalisée de Grav que vous souhaitez utiliser lors de la maintenance.
+      STATUS_CODE: Type de réponse HTTP
+      STATUS_CODE_HELP: Code pour les types de réponses HTTP personnalisées 
 
 ru:
   PLUGIN_MAINTENANCE:
