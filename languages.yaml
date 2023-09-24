@@ -148,3 +148,20 @@ it:
       ACCESS_HELP: La stringa di atuorizzazione ACL deve essere vera per far accedere un utente al sito
       PAGE_ROUTE: Rotta della pagina di mantenimento
       PAGE_ROUTE_HELP: La rotta alla pagina custom di Grav che desideri usare per la modalità mantenimento
+
+cs:
+  PLUGIN_MAINTENANCE:
+    OFFLINE_MARKDOWN: "# Stránka v údržbě\n## Prosím vraťte se později..."
+    AUTHORIZED_ACCESS: "**Požadována autorizace**"
+    BLUEPRINTS:
+      STATUS: Stav pluginu
+      MODE: Údržba webu
+      MODE_HELP: Zapnutí a vypnutí údržby webu
+      ALLOW_LOGIN: Povolit přihlášení
+      ALLOW_LOGIN_HELP: Pokud chceš povolit přihlášení autorizovaným osobám pro přístup k webu
+      ACCESS: Přihlášení
+      ACCESS_HELP: ACL autorizační string, který musí být pravdivě vyhodnocen pro přístup k webu
+      PAGE_ROUTE: Routa stránky údržby webu
+      PAGE_ROUTE_HELP: Routa k vlastní stránce Gravu, která se zobrazí při údržbě webu
+      STATUS_CODE: Typ HTTP odpovědi
+      STATUS_CODE_HELP: Vlastní kód HTTP odpovědi
