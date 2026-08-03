@@ -1,3 +1,11 @@
+# v1.3.5
+## 08/03/2026
+
+1. [](#new)
+    * Added a `Show login form` option, so a site can let signed-in staff keep browsing during maintenance without putting a login form on the front end
+1. [](#bugfix)
+    * Maintenance mode no longer replaces the Admin 2 panel with the maintenance page, so you can still sign in to the admin while the site is offline
+
 # v1.3.4
 ## 05/01/2026
 

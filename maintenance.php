@@ -24,7 +24,7 @@ class MaintenancePlugin extends Plugin
      */
     public function onPluginsInitialized()
     {
-        if ($this->isAdmin()) {
+        if ($this->isAdmin() || $this->isAdminNextRoute()) {
             $this->active = false;
             return;
         }
@@ -33,6 +33,33 @@ class MaintenancePlugin extends Plugin
             'onPagesInitialized' => ['onPagesInitialized', 1000000],
             'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
         ]);
+    }
+
+    /**
+     * Is this request for the Grav 2.0 admin (the Admin 2 SPA)?
+     *
+     * `isAdmin()` only knows about the classic admin plugin, which registers
+     * itself as the `admin` service. Admin 2 does not, so on a Grav 2.0 site
+     * maintenance mode replaces the admin panel with the maintenance page and
+     * the only way back in is to turn `allow_login` on and sign in through the
+     * front-end form that page renders (#43).
+     *
+     * @return bool
+     */
+    protected function isAdminNextRoute()
+    {
+        if (!$this->config->get('plugins.admin2.enabled')) {
+            return false;
+        }
+
+        $base = '/' . trim((string) $this->config->get('plugins.admin2.route', '/admin'), '/');
+        if ($base === '/') {
+            return false;
+        }
+
+        $route = $this->grav['uri']->route();
+
+        return $route === $base || strpos($route, $base . '/') === 0;
     }
 
     /**
