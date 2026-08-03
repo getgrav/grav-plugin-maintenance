@@ -7,7 +7,9 @@ en:
       MODE: Maintenance mode
       MODE_HELP: Toggle the maintenance mode on or off, will be site-wide
       ALLOW_LOGIN: Allow login
-      ALLOW_LOGIN_HELP: If you want to provide a login form for authorized users to access the site
+      ALLOW_LOGIN_HELP: Let authorized users who are signed in carry on using the site while it is offline
+      SHOW_LOGIN_FORM: Show login form
+      SHOW_LOGIN_FORM_HELP: Put a login form on the maintenance page. Turn this off if you sign in through the admin instead, or if you have disabled front end logins
       ACCESS: Login access
       ACCESS_HELP: The ACL authorization string that must be true for a user to access the site
       PAGE_ROUTE: Maintenance page route

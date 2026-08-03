@@ -1,5 +1,6 @@
 enabled: true
 active: false
 allow_login: true
+show_login_form: true
 login_access: 'site.login'
 maintenance_page_route:
